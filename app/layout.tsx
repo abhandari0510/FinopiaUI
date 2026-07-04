@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   openGraph: { title: "Finopia Services", description: "Empowering families through financial literacy.", url: "/", siteName: "Finopia Services", locale: "en_IN", type: "website" },
   twitter: { card: "summary_large_image", title: "Finopia Services", description: "Empowering families through financial literacy." },
   robots: { index: true, follow: true },
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 const schema = {

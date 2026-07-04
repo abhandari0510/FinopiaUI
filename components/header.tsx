@@ -34,7 +34,7 @@ export function Header() {
       </div>
       <AnimatePresence>
         {open && <motion.nav className="mobile-nav" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }}>
-          {navItems.map(([label, labelMr, href]) => <Link key={href} href={href} onClick={() => setOpen(false)} data-faro-user-action-name={`header.mobile-nav.${label.toLowerCase().replaceAll(" ", "-")}`}>{locale === "mr" ? labelMr : label}<span>↗</span></Link>)}
+          {navItems.map(([label, labelMr, href]) => <Link key={href} href={href} onClick={() => setOpen(false)} data-faro-user-action-name={`header.mobile-nav.${label.toLowerCase().replaceAll(" ", "-")}`}>{locale === "mr" ? labelMr : label}</Link>)}
         </motion.nav>}
       </AnimatePresence>
     </header>

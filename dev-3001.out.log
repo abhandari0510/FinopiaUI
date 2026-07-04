@@ -1,0 +1,84 @@
+
+> finopia-services@1.0.0 dev
+> next dev --turbopack -p 3001
+
+   ▲ Next.js 15.5.19 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.4:3001
+   - Environments: .env.local
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+ ✓ Starting...
+Creating turbopack project {
+  dir: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI',
+  testMode: true
+}
+ ✓ Ready in 2.3s
+ ○ Compiling / ...
+ ✓ Compiled / in 5.7s
+ GET / 200 in 6578ms
+ ○ Compiling /founder ...
+ GET / 200 in 1500ms
+ GET /founder 200 in 5568ms
+ ✓ Compiled /founder in 5.7s
+ GET /book 200 in 3350ms
+ GET / 200 in 795ms
+ ○ Compiling /blogs ...
+ ✓ Compiled /blogs in 760ms
+ GET /blogs 200 in 984ms
+ ○ Compiling /gallery ...
+ ✓ Compiled /gallery in 841ms
+ GET /gallery 200 in 1012ms
+ GET /blogs 200 in 201ms
+ GET /book 200 in 187ms
+ ○ Compiling /financial-literacy ...
+ ✓ Compiled /financial-literacy in 718ms
+ GET /financial-literacy 200 in 832ms
+ ○ Compiling /services ...
+ ✓ Compiled /services in 726ms
+ GET /services 200 in 924ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 624ms
+ GET /about 200 in 744ms
+ GET / 200 in 177ms
+ GET /founder 200 in 383ms
+ ✓ Compiled in 6.6s
+ ✓ Compiled / in 116ms
+ GET / 200 in 803ms
+ GET / 200 in 1273ms
+ GET / 200 in 1431ms
+ ○ Compiling /icon.svg ...
+ ✓ Compiled /icon.svg in 678ms
+ GET /icon.svg?icon.b9596ec4.svg 200 in 1094ms
+ GET / 200 in 417ms
+ GET /icon.svg?icon.b9596ec4.svg 200 in 621ms
+ GET / 200 in 350ms
+ ✓ Compiled /book in 131ms
+ GET /book 200 in 304ms
+ GET / 200 in 187ms
+ ✓ Compiled in 391ms
+ ✓ Compiled in 339ms
+ ✓ Compiled in 357ms
+ ✓ Compiled in 312ms
+ ✓ Compiled in 270ms
+ ✓ Compiled / in 226ms
+ GET / 200 in 583ms
+ GET / 200 in 270ms
+ GET / 200 in 268ms
+ GET / 200 in 297ms
+ GET / 200 in 362ms
+ GET / 200 in 266ms
+ GET / 200 in 265ms
+ GET / 200 in 283ms
+ ✓ Compiled /book in 101ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 3.9s
+ GET / 200 in 2901ms
+ ✓ Compiled /about in 240ms
+ GET /about 500 in 1189ms
+ ✓ Compiled /services in 133ms
+ GET /about 500 in 737ms
+ ○ Compiling /testimonials ...
+ ✓ Compiled /testimonials in 2.4s
+ ✓ Compiled in 651ms

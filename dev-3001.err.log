@@ -1,0 +1,84 @@
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbopack
+
+ ⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\server\app\book\page\app-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\server\\app\\book\\page\\app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\static\development\_buildManifest.js.tmp.ci6324fz2wj'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\static\\development\\_buildManifest.js.tmp.ci6324fz2wj'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\server\app\book\page\app-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\server\\app\\book\\page\\app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\static\development\_buildManifest.js.tmp.awx76m9gl6r'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\static\\development\\_buildManifest.js.tmp.awx76m9gl6r'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\static\development\_buildManifest.js.tmp.dai0crwkr9o'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\static\\development\\_buildManifest.js.tmp.dai0crwkr9o'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\server\app\about\page\build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\server\\app\\about\\page\\build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\server\app\about\page\build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\server\\app\\about\\page\\build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\server\app\services\page\build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\server\\app\\services\\page\\build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\static\development\_buildManifest.js.tmp.cqw17mk4lxn'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\static\\development\\_buildManifest.js.tmp.cqw17mk4lxn'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\server\pages\_app\build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\server\\pages\\_app\\build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\static\development\_buildManifest.js.tmp.cqw17mk4lxn'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\static\\development\\_buildManifest.js.tmp.cqw17mk4lxn'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\server\pages\_app\build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\server\\pages\\_app\\build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\aakas\Desktop\FinOpia\FinOpia_UI\.next\server\pages\_app\build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.next\\server\\pages\\_app\\build-manifest.json'
+}

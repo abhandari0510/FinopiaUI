@@ -10,6 +10,13 @@ import { Button } from "@/components/ui/button";
 import { articles, services, site } from "@/content/site";
 
 const icons = [ChartNoAxesCombined, ShieldCheck, HeartPulse, BookOpen, UsersRound, Landmark];
+const launchPhotos = [
+  { src: "/media/gallery/book-launch-01.jpeg", alt: "Book launch guests holding Paishache Shahanpan on stage" },
+  { src: "/media/gallery/book-launch-02.jpeg", alt: "Finopia team members at the Paishache Shahanpan book launch" },
+  { src: "/media/gallery/book-launch-03.jpeg", alt: "Yogesh Kadam signing a book for a young reader" },
+  { src: "/media/gallery/book-launch-04.jpeg", alt: "Yogesh Kadam in conversation during the book launch event" },
+  { src: "/media/gallery/book-launch-05.jpeg", alt: "Audience view during the Paishache Shahanpan book launch" },
+];
 
 export function HomePage() {
   const { t, locale } = useLanguage();
@@ -60,7 +67,7 @@ export function HomePage() {
               <div className="scene-shadow" aria-hidden="true" />
               <div className="wisdom-card">
                 <div className="wisdom-card-top"><span>FINOPIA</span><BadgeCheck size={20} /></div>
-                <div className="wisdom-orb"><Image className="wisdom-orb-logo" src="/media/finopia-symbol.jpeg" alt="" width={160} height={160} sizes="112px" priority /></div>
+                <div className="wisdom-orb"><Image className="wisdom-orb-logo" src="/media/finopia-symbol.jpg" alt="" width={160} height={160} sizes="112px" priority /></div>
                 <div><small>{t.philosophy}</small><h2>{t.trustTitle}</h2><p>{t.trustBody}</p></div>
                 <div className="wisdom-bars"><i /><i /><i /><i /><i /></div>
               </div>
@@ -95,7 +102,7 @@ export function HomePage() {
             <div className="book-shadow" />
             <div className="book-object">
               <div className="book-spine">पैशाचे शहाणपण · योगेश कदम</div>
-              <div className="book-cover"><span>FINOPIA प्रस्तुत</span><div className="book-coin">₹</div><h3>पैशाचे<br /><em>शहाणपण</em></h3><p>आर्थिक साक्षरता ते आर्थिक स्वातंत्र्य</p><small>योगेश कदम CFP®</small></div>
+              <div className="book-cover book-cover-real"><Image src="/media/paishache-shahanpan-book-cover.jpg" alt="पैशाचे शहाणपण book cover" fill sizes="(max-width: 780px) 210px, 290px" priority /></div>
             </div>
             <div className="book-note"><BookOpen size={18} /><span>{t.writtenMarathi}<br /><strong>{t.everyFamily}</strong></span></div>
           </Reveal>
@@ -105,7 +112,7 @@ export function HomePage() {
 
       <section className="section founder-section">
         <div className="founder-grid container">
-          <Reveal className="portrait-placeholder"><div className="portrait-initials">YK</div><div className="portrait-caption"><small>{t.founderLabel}</small><strong>{t.founderName}</strong></div><div className="experience-badge"><strong>13+</strong><span>{t.years}</span></div></Reveal>
+          <Reveal className="portrait-placeholder portrait-photo"><Image src="/media/yogesh-kadam-founder.png" alt="Yogesh Kadam CFP®" fill sizes="(max-width: 780px) 100vw, 420px" /><div className="portrait-caption"><small>{t.founderLabel}</small><strong>{t.founderName}</strong></div></Reveal>
           <Reveal className="founder-copy" delay={.1}><span className="kicker">{t.founderKicker}</span><h2>{t.founderTitle}</h2><p>{t.founderBody}</p><blockquote>“{t.founderQuote}”</blockquote><div className="credential-row"><span><BadgeCheck />CFP® {t.professional}</span><span><BookOpen />{t.author}</span><span><UsersRound />{t.educator}</span></div><Link href="/founder" className="text-link" data-faro-user-action-name="home.founder.journey">{t.journey}<ArrowRight size={16} /></Link></Reveal>
         </div>
       </section>
@@ -124,14 +131,14 @@ export function HomePage() {
       <section className="community-section section">
         <div className="container community-grid">
           <Reveal><span className="kicker light">{t.communityKicker}</span><Quote/><blockquote>{t.communityQuote}</blockquote><p>{t.communityBody}</p><Link href="/testimonials" className="text-link light-link" data-faro-user-action-name="home.community.testimonials">{t.exploreTestimonials} <ArrowRight/></Link></Reveal>
-          <Reveal className="gallery-preview" delay={.1}><div><ImageIcon/><span>{t.launch}</span></div><div><ImageIcon/><span>{t.workshops}</span></div><div><ImageIcon/><span>{t.speaking}</span></div><Link href="/gallery" data-faro-user-action-name="home.gallery.view">{t.viewGallery} <ArrowRight/></Link></Reveal>
+          <Reveal className="gallery-preview home-launch-preview" delay={.1}>{launchPhotos.slice(0, 3).map((photo, index) => <Link className={`home-launch-photo p-${index}`} href="/gallery" key={photo.src} data-faro-user-action-name={`home.gallery.preview.launch-photo.${index + 1}`}><Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 780px) 45vw, 240px" /><span>{t.launch}</span></Link>)}<Link className="home-gallery-link" href="/gallery" data-faro-user-action-name="home.gallery.view">{t.viewGallery} <ArrowRight/></Link></Reveal>
         </div>
       </section>
 
       <section className="section insights-section">
         <div className="container">
           <Reveal className="section-heading split-heading"><div><span className="kicker">{t.insightsKicker}</span><h2>{t.insightsTitle}</h2></div><Link className="text-link" href="/blogs" data-faro-user-action-name="home.insights.view-all">{t.viewInsights} <ArrowRight size={16} /></Link></Reveal>
-          <div className="article-grid">{articles.map((article, index) => <Reveal key={article.title} delay={index * .08} className="article-card"><div className={`article-art ${article.tone}`}><span>0{index + 1}</span><i /><i /><i /></div><small>{locale === "mr" ? article.categoryMr : article.category} · {locale === "mr" ? article.readMr : article.read}</small><h3>{locale === "mr" ? article.titleMr : article.title}</h3><Link href="/blogs" data-faro-user-action-name={`home.article.${article.title.toLowerCase().replaceAll(" ", "-")}`}>{t.readArticle} <ArrowRight size={15} /></Link></Reveal>)}</div>
+          <div className="article-grid">{articles.map((article, index) => <Reveal key={article.title} delay={index * .08} className="article-card"><Link className="article-card-link" href={`/blogs/${article.slug}`} data-faro-user-action-name={`home.article.${article.slug}`}><div className={`article-art ${article.tone}`}><span>0{index + 1}</span><i /><i /><i /></div><small>{locale === "mr" ? article.categoryMr : article.category} · {locale === "mr" ? article.readMr : article.read}</small><h3>{locale === "mr" ? article.titleMr : article.title}</h3><p>{locale === "mr" ? article.excerptMr : article.excerpt}</p><span className="text-link">{t.readArticle} <ArrowRight size={15} /></span></Link></Reveal>)}</div>
         </div>
       </section>
 

@@ -14,7 +14,7 @@ type CheckoutForm = {
   postalCode: string;
 };
 
-const WHATSAPP_NUMBER = "919977696796";
+const WHATSAPP_NUMBER = "+919977696796";
 const PLACEHOLDER_MARKETPLACE_URL = "https://example.com/coming-soon";
 
 const initialForm: CheckoutForm = {
