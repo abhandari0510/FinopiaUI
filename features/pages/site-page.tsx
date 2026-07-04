@@ -1,0 +1,83 @@
+"use client";
+
+import Link from "next/link";
+import { ArrowRight, BadgeCheck, BookOpen, ChartNoAxesCombined, Check, Clock3, Eye, HeartHandshake, HeartPulse, ImageIcon, Landmark, Lightbulb, Mail, MapPin, MessageCircle, Phone, Presentation, Quote, Scale, Search, ShieldCheck, UsersRound } from "lucide-react";
+import { useLanguage } from "@/components/providers";
+import { PageHero } from "@/components/page-hero";
+import { Reveal } from "@/components/reveal";
+import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { BookCheckout } from "@/features/checkout/book-checkout";
+import { ContactForm } from "@/features/contact/contact-form";
+import { articles, services, site } from "@/content/site";
+import { pageCopy } from "@/i18n/pages";
+
+export type SitePageName = "about" | "founder" | "services" | "literacy" | "book" | "blogs" | "gallery" | "testimonials" | "contact" | "privacy" | "terms" | "disclosures";
+const serviceIcons = [ChartNoAxesCombined, ShieldCheck, HeartPulse, BookOpen, UsersRound, Landmark];
+const valueIcons = [Lightbulb, Scale, HeartHandshake, Eye];
+
+function Hero({ copy }: { copy: readonly [string, string, string] }) {
+  return <PageHero eyebrow={copy[0]} title={copy[1]} description={copy[2]} />;
+}
+
+function LegalPage({ copy }: { copy: { readonly hero: readonly [string, string, string]; readonly sections: readonly (readonly [string, string])[] } }) {
+  return <main><Hero copy={copy.hero} /><article className="legal-copy container section">{copy.sections.map(([title, body]) => <div key={title}><h2>{title}</h2><p>{body}</p></div>)}</article></main>;
+}
+
+export function SitePage({ page }: { page: SitePageName }) {
+  const { locale } = useLanguage();
+  const copy = pageCopy[locale];
+  const mr = locale === "mr";
+  const mainClass = mr ? "lang-marathi" : undefined;
+
+  if (page === "about") {
+    const c = copy.about;
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container narrative-grid"><Reveal><span className="kicker">{c.mission}</span><h2>{c.missionTitle}</h2></Reveal><Reveal><p className="large-copy">{c.missionLead}</p><p>{c.missionBody}</p></Reveal></div></section><section className="section values-section"><div className="container"><Reveal className="section-heading"><span className="kicker">{c.valuesKicker}</span><h2>{c.valuesTitle}</h2></Reveal><div className="value-grid">{c.values.map(([title, body], i) => { const Icon = valueIcons[i]; return <Reveal className="value-card" key={title} delay={i * .06}><Icon /><h3>{title}</h3><p>{body}</p></Reveal>; })}</div></div></section><section className="section"><div className="container timeline"><Reveal><span className="kicker">{c.direction}</span><h2>{c.directionTitle}</h2></Reveal>{c.timeline.map(([title, body], i) => <Reveal className="timeline-item" key={title}><span>0{i + 1}</span><div><strong>{title}</strong><p>{body}</p></div></Reveal>)}</div></section></main>;
+  }
+
+  if (page === "founder") {
+    const c = copy.founder;
+    const credentialIcons = [BadgeCheck, BookOpen, Presentation, UsersRound];
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container founder-detail"><Reveal className="portrait-placeholder founder-page-portrait"><div className="portrait-initials">YK</div></Reveal><Reveal><span className="kicker">{c.kicker}</span><h2>{c.title}</h2><p className="large-copy">{c.lead}</p><p>{c.body}</p><div className="credentials-list">{c.credentials.map((label, i) => { const Icon = credentialIcons[i]; return <span key={label}><Icon />{label}{i === 0 ? ` #${site.compliance.cfp}` : ""}</span>; })}</div></Reveal></div></section></main>;
+  }
+
+  if (page === "services") {
+    const c = copy.services;
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container service-list">{services.map((service, i) => { const Icon = serviceIcons[i]; const title = mr ? service.titleMr : service.title; return <Reveal className="service-row" key={service.title}><span>0{i + 1}</span><Icon /><div><h2>{title}</h2><p>{mr ? service.descriptionMr : service.description}</p></div><Link href="/contact" aria-label={`${c.inquire} ${title}`} data-faro-user-action-name={`services.inquire.${service.title.toLowerCase().replaceAll(" ", "-")}`}><ArrowRight /></Link></Reveal>; })}</div></section><section className="disclosure-callout container"><ShieldCheck /><div><strong>{c.scope}</strong><p>{c.disclosure}</p></div></section></main>;
+  }
+
+  if (page === "literacy") {
+    const c = copy.literacy;
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container learning-grid"><Reveal><span className="kicker">{c.kicker}</span><h2>{c.title}</h2><p className="large-copy">{c.lead}</p></Reveal><Reveal className="learning-steps">{c.steps.map((step, i) => <div key={step}><span>0{i + 1}</span><strong>{step}</strong></div>)}</Reveal></div></section><section className="section faq-section"><div className="container faq-grid"><Reveal><span className="kicker">{c.faqKicker}</span><h2>{c.faqTitle}</h2></Reveal><Reveal><Accordion type="single" collapsible>{c.faqs.map(([question, answer], i) => <AccordionItem value={`item-${i}`} key={question}><AccordionTrigger data-faro-user-action-name={`literacy.faq.toggle.${i + 1}`}>{question}</AccordionTrigger><AccordionContent>{answer}</AccordionContent></AccordionItem>)}</Accordion></Reveal></div></section></main>;
+  }
+
+  if (page === "book") {
+    const c = copy.book;
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="book-detail section"><div className="container book-grid"><Reveal className="book-stage"><div className="book-shadow" /><div className="book-object"><div className="book-spine">पैशाचे शहाणपण · योगेश कदम</div><div className="book-cover"><span>FINOPIA प्रस्तुत</span><div className="book-coin">₹</div><h3>पैशाचे<br /><em>शहाणपण</em></h3><p>आर्थिक साक्षरता ते आर्थिक स्वातंत्र्य</p><small>योगेश कदम CFP®</small></div></div></Reveal><Reveal className="book-copy"><span className="kicker light">{c.inside}</span><h2>{c.title}</h2><p>{c.body}</p><ul>{c.points.map(point => <li key={point}><Check />{point}</li>)}</ul><Button asChild><a href="#buy" data-faro-user-action-name="book.hero.buy-anchor">Buy the book <ArrowRight /></a></Button></Reveal></div><Reveal className="container checkout-wrap"><BookCheckout /></Reveal></section></main>;
+  }
+
+  if (page === "blogs") {
+    const c = copy.blogs;
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container"><div className="content-toolbar"><div><Search />{c.search}</div>{c.filters.map(filter => <span key={filter}>{filter}</span>)}</div><div className="article-grid">{[...articles, ...articles].map((article, i) => <Reveal className="article-card" key={`${article.title}-${i}`}><div className={`article-art ${article.tone}`}><span>0{i + 1}</span><i /><i /><i /></div><small>{mr ? article.categoryMr : article.category} · {mr ? article.readMr : article.read}</small><h3>{mr ? article.titleMr : article.title}</h3><span className="text-link">{c.read} <ArrowRight /></span></Reveal>)}</div></div></section></main>;
+  }
+
+  if (page === "gallery") {
+    const c = copy.gallery;
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container"><div className="gallery-filters">{c.categories.map((category, i) => <button className={i === 0 ? "active" : ""} key={category} data-faro-user-action-name={`gallery.filter.${category.toLowerCase().replaceAll(" ", "-")}`}>{category}</button>)}</div><div className="gallery-grid">{Array.from({ length: 7 }).map((_, i) => <div className={`gallery-placeholder g-${i}`} key={i}><ImageIcon /><span>{c.photo}</span><small>{c.waiting}</small></div>)}</div></div></section></main>;
+  }
+
+  if (page === "testimonials") {
+    const c = copy.testimonials;
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container testimonial-grid">{c.categories.map(category => <article className="testimonial-placeholder" key={category}><Quote /><p>{c.placeholder}</p><div><span>{category.slice(0, 1)}</span><strong>{category}</strong></div></article>)}</div></section></main>;
+  }
+
+  if (page === "contact") {
+    const c = copy.contact;
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container contact-grid"><div className="contact-details"><h2>{c.title}</h2><p>{c.body}</p><a href={`tel:${site.phone}`} data-faro-user-action-name="contact.details.phone"><Phone /><span><small>{c.mobile}</small>{site.phone}</span></a><a href={`mailto:${site.email}`} data-faro-user-action-name="contact.details.email"><Mail /><span><small>{c.email}</small>{site.email}</span></a><div><MapPin /><span><small>{c.visit}</small>{mr ? site.addressMr : site.address}</span></div><div><Clock3 /><span><small>{c.hours}</small>{c.hoursValue}</span></div><a className="whatsapp-card" target="_blank" href={`https://wa.me/${site.whatsapp}`} data-faro-user-action-name="contact.details.whatsapp"><MessageCircle />{c.whatsapp} →</a></div><ContactForm /></div></section></main>;
+  }
+
+  if (page === "privacy" || page === "terms") return <div className={mainClass}><LegalPage copy={copy[page]} /></div>;
+
+  const c = copy.disclosures;
+  return <main className={mainClass}><Hero copy={c.hero} /><article className="legal-copy container section"><h2>{c.mfTitle}</h2><p>{c.mfBody} ARN: {site.compliance.arn}. EUIN: {site.compliance.euin}. {mr ? "ARN वैधता" : "ARN validity"}: {site.compliance.validity}.</p><p>{c.risk}</p><h2>{c.insuranceTitle}</h2><p>{c.insurance}: {site.compliance.insurer}. {c.agency}: {site.compliance.agency}. {c.solicitation}</p><h2>{c.important}</h2><p>{c.importantBody}</p></article></main>;
+}
