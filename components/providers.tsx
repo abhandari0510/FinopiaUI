@@ -11,10 +11,51 @@ const LanguageContext = createContext<LanguageContextValue | null>(null);
 export function Providers({ children }: { children: React.ReactNode }) {
   const [locale, setLocale] = useState<Locale>("en");
 
+  const faroEnabled = process.env.NEXT_PUBLIC_GRAFANA_FARO_ENABLED === "true";
+  const faroUrl = process.env.NEXT_PUBLIC_GRAFANA_FARO_URL;
+  const faroAppName = process.env.NEXT_PUBLIC_GRAFANA_APP_NAME ?? "FinOpia UI";
+  const faroAppVersion = process.env.NEXT_PUBLIC_GRAFANA_APP_VERSION ?? "1.0.0";
+  const faroEnvironment = process.env.NEXT_PUBLIC_GRAFANA_ENVIRONMENT ?? process.env.NODE_ENV ?? "production";
+  const faroSessionSamplingRate = Number(process.env.NEXT_PUBLIC_GRAFANA_SESSION_SAMPLING_RATE ?? "1");
+
   useEffect(() => {
     const saved = window.localStorage.getItem("finopia-locale") as Locale | null;
     if (saved === "mr" || saved === "en") setLocale(saved);
   }, []);
+
+  useEffect(() => {
+    if (!faroEnabled || !faroUrl) return;
+
+    let cancelled = false;
+
+    void import("@grafana/faro-web-sdk").then(async ({ getWebInstrumentations, initializeFaro }) => {
+      if (cancelled) return;
+      const { TracingInstrumentation } = await import("@grafana/faro-web-tracing");
+
+      initializeFaro({
+        url: faroUrl,
+        app: {
+          name: faroAppName,
+          version: faroAppVersion,
+          environment: faroEnvironment,
+        },
+        sessionTracking: {
+          samplingRate: 1,
+          persistent: true
+        },
+        instrumentations: [
+          ...getWebInstrumentations(),
+          new TracingInstrumentation(),
+        ],
+      });
+    }).catch((error) => {
+      console.error("Grafana Faro failed to initialize:", error);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [faroEnabled, faroUrl, faroAppName, faroAppVersion, faroEnvironment, faroSessionSamplingRate]);
 
   useEffect(() => {
     document.documentElement.lang = locale;

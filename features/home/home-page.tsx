@@ -78,9 +78,17 @@ export function HomePage() {
           </motion.div>
         </div>
         <div className="trust-rail container">
-          <span>{t.registered}</span><strong>{site.compliance.arn}</strong><i /><strong>{site.compliance.euin}</strong><i /><strong>CFP® #{site.compliance.cfp}</strong><i /><strong>{t.validThrough}</strong>
+          <span>{t.registered}</span><strong>{site.compliance.arn}</strong><i /><strong>{site.compliance.euin}</strong><i /><strong>CFP® #{site.compliance.cfp}</strong>
         </div>
       </section>
+
+      <section className="section founder-section">
+        <div className="founder-grid container">
+          <Reveal className="portrait-placeholder portrait-photo"><Image src="/media/yogesh-kadam-founder.png" alt="Yogesh Kadam CFP®" fill sizes="(max-width: 780px) 100vw, 420px" /><div className="portrait-caption"><small>{t.founderLabel}</small><strong>{t.founderName}</strong></div></Reveal>
+          <Reveal className="founder-copy" delay={.1}><span className="kicker">{t.founderKicker}</span><h2>{t.founderTitle}</h2><p>{t.founderBody}</p><blockquote>“{t.founderQuote}”</blockquote><div className="credential-row"><span><BadgeCheck />CFP® {t.professional}</span><span><BookOpen />{t.author}</span><span><UsersRound />{t.educator}</span></div><Link href="/founder" className="text-link" data-faro-user-action-name="home.founder.journey">{t.journey}<ArrowRight size={16} /></Link></Reveal>
+        </div>
+      </section>
+
 
       <section className="section services-section">
         <div className="container">
@@ -110,19 +118,12 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="section founder-section">
-        <div className="founder-grid container">
-          <Reveal className="portrait-placeholder portrait-photo"><Image src="/media/yogesh-kadam-founder.png" alt="Yogesh Kadam CFP®" fill sizes="(max-width: 780px) 100vw, 420px" /><div className="portrait-caption"><small>{t.founderLabel}</small><strong>{t.founderName}</strong></div></Reveal>
-          <Reveal className="founder-copy" delay={.1}><span className="kicker">{t.founderKicker}</span><h2>{t.founderTitle}</h2><p>{t.founderBody}</p><blockquote>“{t.founderQuote}”</blockquote><div className="credential-row"><span><BadgeCheck />CFP® {t.professional}</span><span><BookOpen />{t.author}</span><span><UsersRound />{t.educator}</span></div><Link href="/founder" className="text-link" data-faro-user-action-name="home.founder.journey">{t.journey}<ArrowRight size={16} /></Link></Reveal>
-        </div>
-      </section>
-
       <section className="proof-section section">
         <div className="container">
           <Reveal className="section-heading split-heading"><div><span className="kicker">{t.proofKicker}</span><h2>{t.proofTitle}</h2></div><p>{t.proofBody}</p></Reveal>
           <div className="proof-grid">
             <Reveal className="proof-card"><BadgeCheck/><small>{t.professionalCredential}</small><h3>CFP® {t.professional}</h3><p>{t.certificationNumber} {site.compliance.cfp}</p></Reveal>
-            <Reveal delay={.06} className="proof-card"><FileCheck2/><small>{t.mfDistribution}</small><h3>{site.compliance.arn}</h3><p>EUIN {site.compliance.euin} · {t.validTo} {site.compliance.validity}</p></Reveal>
+            <Reveal delay={.06} className="proof-card"><FileCheck2/><small>{t.mfDistribution}</small><h3>{site.compliance.arn}</h3><p>EUIN {site.compliance.euin}</p></Reveal>
             <Reveal delay={.12} className="proof-card"><ShieldCheck/><small>{t.insuranceDistribution}</small><h3>HDFC Life</h3><p>{t.agencyCode} {site.compliance.agency}</p></Reveal>
           </div>
         </div>

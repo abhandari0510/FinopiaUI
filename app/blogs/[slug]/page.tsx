@@ -9,8 +9,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const article = articles.find((item) => item.slug === slug);
   return {
-    title: article ? `${article.title} | Finopia insights` : "Finopia insights",
-    description: article?.excerpt,
+    title: article ? `${article.title} | Finopia Services Insights` : "Finopia Services Insights",
+    description: article?.excerpt ?? "Read practical financial literacy articles from Finopia Services.",
   };
 }
 

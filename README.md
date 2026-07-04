@@ -222,18 +222,6 @@ The committed `.env.example` documents variables without containing secrets. Nev
 | `NEXT_PUBLIC_FINOPIA_API_BASE_URL` | Only if backend/checkout is enabled | `https://api.finopiaservices.com` | Public origin of the Spring Boot backend |
 | `NEXT_PUBLIC_RAZORPAY_KEY_ID` | Only if online Razorpay checkout is enabled | `rzp_live_xxxxxxxxxxxxxx` | Browser-safe Razorpay key ID; never use the secret here |
 | `NEXT_PUBLIC_BOOK_SKU` | Only if book checkout/inquiry integration is enabled | `paishache-shahanpan` | Product identifier shared with the backend |
-| `NEXT_PUBLIC_GRAFANA_FARO_ENABLED` | Optional | `true` | Enables/disables browser observability without removing code |
-| `NEXT_PUBLIC_GRAFANA_FARO_URL` | Required for Grafana browser telemetry | `https://faro-collector.../collect/...` | Grafana Faro collector URL |
-| `NEXT_PUBLIC_GRAFANA_APP_NAME` | Recommended | `FinOpia UI` | App name used in Grafana |
-| `NEXT_PUBLIC_GRAFANA_APP_VERSION` | Recommended | `1.0.0` | App version used in Grafana and source maps |
-| `NEXT_PUBLIC_GRAFANA_ENVIRONMENT` | Recommended | `production` | Environment label such as `local`, `staging` or `production` |
-| `NEXT_PUBLIC_GRAFANA_SESSION_SAMPLING_RATE` | Optional | `1` | Session sampling rate; `1` captures 100% |
-| `GRAFANA_FARO_SOURCE_MAP_UPLOAD_ENABLED` | Optional build-time only | `true` | Enables/disables source-map upload during production builds |
-| `GRAFANA_FARO_SOURCE_MAP_ENDPOINT` | Required for source-map upload | `https://faro-api-prod-ap-south-1.grafana.net/faro/api/v1` | Grafana Faro API endpoint |
-| `GRAFANA_FARO_APP_ID` | Required for source-map upload | `1906` | Grafana Frontend Observability app ID |
-| `GRAFANA_FARO_STACK_ID` | Required for source-map upload | `1706338` | Grafana Cloud stack ID |
-| `GRAFANA_FARO_SOURCE_MAP_API_KEY` | Required for source-map upload | `glc_...` | Private Grafana API key; never expose with `NEXT_PUBLIC_` |
-| `GRAFANA_FARO_SOURCE_MAP_VERBOSE` | Optional | `true` | Logs source-map upload details during builds |
 
 Rules:
 
@@ -841,107 +829,9 @@ NEXT_PUBLIC_BOOK_SKU=paishache-shahanpan
 
 Never put backend-only credentials in `FinOpia_UI`. Razorpay secret, webhook secret, database credentials, SMTP password, Shiprocket password, JWT secret and admin password belong only to the backend environment.
 
-## Grafana Frontend Observability
+## Telemetry removed
 
-Grafana Faro is initialized from `instrumentation-client.ts`, which Next.js loads before the application hydrates. This gives the auto-instrumentations the earliest practical startup point in this Next.js App Router project.
-
-Installed packages:
-
-- `@grafana/faro-web-sdk`
-- `@grafana/faro-web-tracing`
-- `@grafana/faro-webpack-plugin`
-
-The initialization currently enables:
-
-- User actions
-- JavaScript errors
-- Web vitals
-- Sessions
-- Views/navigation
-- Performance instrumentation
-- CSP reports
-- Console capture
-- HTTP tracing through `TracingInstrumentation`
-
-User-action naming uses stable English identifiers instead of visible button text, so English and Marathi clicks group together in Grafana. The convention is:
-
-```text
-area.component.action
-```
-
-Examples:
-
-```text
-header.nav.services
-header.language.toggle
-home.hero.explore-approach
-home.book.buy
-services.inquire.mutual-fund-distribution
-literacy.faq.toggle.1
-contact.form.submit
-checkout.submit.buy-securely
-checkout.whatsapp
-floating.whatsapp
-footer.social.instagram
-```
-
-Grafana tracks clicks, Enter and Space activation for elements with:
-
-```tsx
-data-faro-user-action-name="contact.form.submit"
-```
-
-When adding a new button, link, accordion trigger or clickable card, add a `data-faro-user-action-name` value at the clickable element itself. Avoid placing personal data, phone numbers, emails, dynamic user-entered values or translated copy inside the action name.
-
-### Local observability setup
-
-Copy `.env.example` to `.env.local` and adjust:
-
-```env
-NEXT_PUBLIC_GRAFANA_FARO_ENABLED=true
-NEXT_PUBLIC_GRAFANA_FARO_URL=https://faro-collector-prod-ap-south-1.grafana.net/collect/1c96b8de4ebf873a96f363e80f6a1027
-NEXT_PUBLIC_GRAFANA_APP_NAME=FinOpia UI
-NEXT_PUBLIC_GRAFANA_APP_VERSION=1.0.0
-NEXT_PUBLIC_GRAFANA_ENVIRONMENT=local
-NEXT_PUBLIC_GRAFANA_SESSION_SAMPLING_RATE=1
-```
-
-Restart the dev server after changing env variables:
-
-```bash
-npm run dev
-```
-
-To temporarily disable frontend telemetry:
-
-```env
-NEXT_PUBLIC_GRAFANA_FARO_ENABLED=false
-```
-
-### Production source maps
-
-Source-map upload is configured in `next.config.ts` through `@grafana/faro-webpack-plugin`.
-
-Set these only in the production build environment or CI/CD secret store:
-
-```env
-GRAFANA_FARO_SOURCE_MAP_UPLOAD_ENABLED=true
-GRAFANA_FARO_SOURCE_MAP_ENDPOINT=https://faro-api-prod-ap-south-1.grafana.net/faro/api/v1
-GRAFANA_FARO_APP_ID=1906
-GRAFANA_FARO_STACK_ID=1706338
-GRAFANA_FARO_SOURCE_MAP_API_KEY=your-private-grafana-api-key
-GRAFANA_FARO_SOURCE_MAP_VERBOSE=true
-```
-
-Then build normally:
-
-```bash
-npm run build
-```
-
-If `GRAFANA_FARO_SOURCE_MAP_API_KEY` is missing or still set to the placeholder value, the build will skip uploading source maps. Browser source maps are still generated through `productionBrowserSourceMaps: true`.
-
-Important: `NEXT_PUBLIC_GRAFANA_APP_NAME` must match the app name used for source-map upload. Keep it as `FinOpia UI` unless you intentionally rename the Grafana app.
+Grafana Faro observability and related build-time configuration have been removed from this repository. No browser telemetry dependencies or Grafana source map upload settings are required.
 
 ## SEO and social sharing
 

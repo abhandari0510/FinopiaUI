@@ -1,6 +1,10 @@
 export const site = {
   name: "Finopia Services",
   founder: "Yogesh Kadam CFP®",
+  tagline: "Financial literacy, mutual fund guidance and insurance support for families in Karad",
+  seoDescription: "Finopia Services helps families in Karad build financial confidence with practical financial literacy, mutual fund guidance, insurance support and investor awareness programs.",
+  seoDescriptionMr: "फिनोपिया सर्व्हिसेस कराडमध्ये आर्थिक साक्षरता, म्युच्युअल फंड मार्गदर्शन आणि विमा सहाय्याद्वारे कुटुंबांना आर्थिक आत्मविश्वास देण्यास मदत करते.",
+  keywords: ["financial literacy", "mutual fund distributor", "insurance solutions", "Yogesh Kadam CFP", "Karad", "पैशाचे शहाणपण", "family financial planning"],
   phone: "+91 97393 79696",
   office: "+91 99776 96796",
   email: "finopiaservices@gmail.com",
