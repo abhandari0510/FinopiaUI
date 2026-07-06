@@ -3257,7 +3257,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-      "bytes": 128342,
+      "bytes": 128347,
       "imports": [
         {
           "path": "path",
@@ -5303,8 +5303,8 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/about/page.js": {
-      "bytes": 15988,
+    ".open-next/server-functions/default/.next/server/app/blogs/page.js": {
+      "bytes": 15949,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -5384,8 +5384,8 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/blogs/page.js": {
-      "bytes": 15949,
+    ".open-next/server-functions/default/.next/server/app/about/page.js": {
+      "bytes": 15988,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -5889,14 +5889,14 @@
           "original": "C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.open-next\\server-functions\\default\\.next\\server\\pages\\_document.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/about/page.js",
-          "kind": "require-call",
-          "original": "C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.open-next\\server-functions\\default\\.next\\server\\app\\about\\page.js"
-        },
-        {
           "path": ".open-next/server-functions/default/.next/server/app/blogs/page.js",
           "kind": "require-call",
           "original": "C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.open-next\\server-functions\\default\\.next\\server\\app\\blogs\\page.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/about/page.js",
+          "kind": "require-call",
+          "original": "C:\\Users\\aakas\\Desktop\\FinOpia\\FinOpia_UI\\.open-next\\server-functions\\default\\.next\\server\\app\\about\\page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/terms/page.js",
@@ -8189,7 +8189,7 @@
           "bytesInOutput": 9106
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-          "bytesInOutput": 109157
+          "bytesInOutput": 109162
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/app-render/action-async-storage-instance.js": {
           "bytesInOutput": 501
@@ -8392,11 +8392,11 @@
         ".open-next/server-functions/default/.next/server/pages/_document.js": {
           "bytesInOutput": 492
         },
-        ".open-next/server-functions/default/.next/server/app/about/page.js": {
-          "bytesInOutput": 16154
-        },
         ".open-next/server-functions/default/.next/server/app/blogs/page.js": {
           "bytesInOutput": 16091
+        },
+        ".open-next/server-functions/default/.next/server/app/about/page.js": {
+          "bytesInOutput": 16154
         },
         ".open-next/server-functions/default/.next/server/app/terms/page.js": {
           "bytesInOutput": 15924
@@ -8525,7 +8525,7 @@
           "bytesInOutput": 64374
         }
       },
-      "bytes": 4353468
+      "bytes": 4353473
     }
   }
 }
