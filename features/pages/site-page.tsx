@@ -11,10 +11,11 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { BookCheckout } from "@/features/checkout/book-checkout";
 import { ContactForm } from "@/features/contact/contact-form";
+import { FeedbackForm } from "@/features/contact/feedback-form";
 import { articles, services, site } from "@/content/site";
 import { pageCopy } from "@/i18n/pages";
 
-export type SitePageName = "about" | "founder" | "services" | "literacy" | "book" | "blogs" | "gallery" | "testimonials" | "contact" | "privacy" | "terms" | "disclosures";
+export type SitePageName = "about" | "founder" | "services" | "literacy" | "book" | "blogs" | "gallery" | "testimonials" | "contact" | "feedback" | "privacy" | "terms" | "disclosures";
 const serviceIcons = [ChartNoAxesCombined, ShieldCheck, HeartPulse, BookOpen, UsersRound, Landmark];
 const valueIcons = [Lightbulb, Scale, HeartHandshake, Eye];
 
@@ -71,7 +72,7 @@ export function SitePage({ page }: { page: SitePageName }) {
 
   if (page === "services") {
     const c = copy.services;
-    return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container service-list">{services.map((service, i) => { const Icon = serviceIcons[i]; const title = mr ? service.titleMr : service.title; return <Reveal className="service-row" key={service.title}><span>0{i + 1}</span><Icon /><div><h2>{title}</h2><p>{mr ? service.descriptionMr : service.description}</p></div><Link href="/contact" aria-label={`${c.inquire} ${title}`} data-faro-user-action-name={`services.inquire.${service.title.toLowerCase().replaceAll(" ", "-")}`}><ArrowRight /></Link></Reveal>; })}</div></section><section className="disclosure-callout container"><ShieldCheck /><div><strong>{c.scope}</strong><p>{c.disclosure}</p></div></section></main>;
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container service-list">{services.map((service, i) => { const Icon = serviceIcons[i]; const title = mr ? service.titleMr : service.title; return <Reveal className="service-row" key={service.title}><span>0{i + 1}</span><Icon /><div><h2>{title}</h2><p>{mr ? service.descriptionMr : service.description}</p></div><Link href="/feedback" aria-label={`${c.inquire} ${title}`} data-faro-user-action-name={`services.inquire.${service.title.toLowerCase().replaceAll(" ", "-")}`}><ArrowRight /></Link></Reveal>; })}</div></section><section className="section feedback-callout"><div className="container"><div className="feedback-copy"><h2>{c.feedbackTitle}</h2><p>{c.feedbackBody}</p><Button asChild><a href="/feedback" data-faro-user-action-name="services.feedback.cta">{c.feedbackAction} <ArrowRight /></a></Button></div></div></section><section className="section disclosure-section"><div className="container"><div className="disclosure-callout"><ShieldCheck /><div><strong>{c.scope}</strong><p>{c.disclosure}</p></div></div></div></section></main>;
   }
 
   if (page === "literacy") {
@@ -81,7 +82,7 @@ export function SitePage({ page }: { page: SitePageName }) {
 
   if (page === "book") {
     const c = copy.book;
-    return <main className={mainClass}><Hero copy={c.hero} /><section className="book-detail section"><div className="container book-grid"><Reveal className="book-stage"><div className="book-shadow" /><div className="book-object"><div className="book-spine">पैशाचे शहाणपण · योगेश कदम</div><div className="book-cover book-cover-real"><Image src="/media/paishache-shahanpan-book-cover.jpg" alt="पैशाचे शहाणपण book cover" fill sizes="(max-width: 780px) 210px, 290px" priority /></div></div></Reveal><Reveal className="book-copy"><span className="kicker light">{c.inside}</span><h2>{c.title}</h2><p>{c.body}</p><ul>{c.points.map(point => <li key={point}><Check />{point}</li>)}</ul><Button asChild><a href="#buy" data-faro-user-action-name="book.hero.buy-anchor">Buy the book <ArrowRight /></a></Button></Reveal></div><Reveal className="container checkout-wrap"><BookCheckout /></Reveal></section></main>;
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="book-detail section"><div className="container book-grid"><Reveal className="book-stage"><div className="book-shadow" /><div className="book-object"><div className="book-spine">पैशाचे शहाणपण · योगेश कदम</div><div className="book-cover book-cover-real"><Image src="/media/paishache-shahanpan-book-cover.jpg" alt="पैशाचे शहाणपण book cover" fill sizes="(max-width: 780px) 210px, 290px" priority /></div></div></Reveal><Reveal className="book-copy"><span className="kicker light">{c.inside}</span><h2>{c.title}</h2><p>{c.body}</p><ul>{c.points.map(point => <li key={point}><Check />{point}</li>)}</ul><div className="checkout-actions"><Button asChild><a href="#buy" data-faro-user-action-name="book.hero.buy-anchor">Buy the book <ArrowRight /></a></Button><Button asChild><a href="/feedback" data-faro-user-action-name="book.feedback-link">Share feedback <ArrowRight /></a></Button></div></Reveal></div><Reveal className="container checkout-wrap"><BookCheckout /></Reveal></section></main>;
   }
 
   if (page === "blogs") {
@@ -104,6 +105,11 @@ export function SitePage({ page }: { page: SitePageName }) {
   if (page === "contact") {
     const c = copy.contact;
     return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container contact-grid"><div className="contact-details"><h2>{c.title}</h2><p>{c.body}</p><a href={`tel:${site.phone}`} data-faro-user-action-name="contact.details.phone"><Phone /><span><small>{c.mobile}</small>{site.phone}</span></a><a href={`mailto:${site.email}`} data-faro-user-action-name="contact.details.email"><Mail /><span><small>{c.email}</small>{site.email}</span></a><div><MapPin /><span><small>{c.visit}</small>{mr ? site.addressMr : site.address}</span></div><div><Clock3 /><span><small>{c.hours}</small>{c.hoursValue}</span></div><a className="whatsapp-card" target="_blank" href={`https://wa.me/${site.whatsapp}`} data-faro-user-action-name="contact.details.whatsapp"><MessageCircle />{c.whatsapp} →</a></div><ContactForm /></div></section></main>;
+  }
+
+  if (page === "feedback") {
+    const c = copy.feedback;
+    return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container contact-grid"><div className="contact-details"><h2>{c.title}</h2><p>{c.body}</p><a href="/contact" data-faro-user-action-name="feedback.contact-link"><Mail /><span><small>{c.contactSmall}</small>{c.contactLink}</span></a></div><FeedbackForm /></div></section></main>;
   }
 
   if (page === "privacy" || page === "terms") return <div className={mainClass}><LegalPage copy={copy[page]} /></div>;
