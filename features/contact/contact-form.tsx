@@ -10,7 +10,7 @@ import { useLanguage } from "@/components/providers";
 
 type FormData = { name: string; phone: string; email: string; interest: string; message?: string; consent: boolean };
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mvzjdwbg";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xeebygjz";
 const defaultValues: FormData = { name: "", phone: "", email: "", interest: "", message: "", consent: true };
 
 const formCopy = {
