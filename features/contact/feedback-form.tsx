@@ -10,7 +10,7 @@ import { useLanguage } from "@/components/providers";
 
 type FormData = { name?: string; phone?: string; email?: string; message: string };
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xlgyqbrj";
+const FORMSPREE_ENDPOINT = "https://formsubmit.co/finopiaservices@gmail.com";
 const defaultValues: FormData = { name: "", phone: "", email: "", message: "" };
 
 const formCopy = {
