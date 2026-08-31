@@ -15,7 +15,7 @@ type CheckoutForm = {
 };
 
 const WHATSAPP_NUMBER = "+919977696796";
-const PLACEHOLDER_MARKETPLACE_URL = "https://example.com/coming-soon";
+const PLACEHOLDER_MARKETPLACE_URL = "https://www.amazon.in/sp?ie=UTF8&seller=A2IGNEAZJFZ1AL&isAmazonFulfilled=0&asin=9357809732&ref_=olp_merch_name_1";
 
 const initialForm: CheckoutForm = {
   name: "",
