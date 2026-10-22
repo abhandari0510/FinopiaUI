@@ -4,3 +4,8 @@ out
 .env*
 !.env.example
 npm-debug.log*
+*.log
+tsconfig.tsbuildinfo
+.open-next/
+.wrangler/
+.DS_Store

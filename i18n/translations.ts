@@ -1,6 +1,16 @@
 export const translations = {
   en: {
     language: "मराठी",
+    booksPage: {
+      eyebrow: "Books by Yogesh Kadam", heading: "Financial wisdom,", headingAccent: "for life.", intro: "Practical perspectives on money, financial awareness, and building a more secure financial future.",
+      booksLabel: "Book editions", original: "Original Marathi Edition", marathiAlt: "Cover of पैशाचे शहाणपण by Yogesh Kadam", marathiDescription: "A practical foundation for understanding money, building financial discipline, recognising the role of protection, and having more meaningful conversations about family finances.", author: "Yogesh Kadam", buyAmazon: "Buy on Amazon",
+      englishEdition: "English edition", englishTitle: "Money Wisdom", englishAlt: "Money Wisdom book cover", englishDescription: "The English translation of Paishache Shahanpan, with practical guidance on financial literacy, saving, insurance, debt, investing, financial stress, and planning.",
+      whatsappSection: "WhatsApp book ordering", whatsappSummary: "Order a book through WhatsApp", closing: "Financial literacy to financial freedom — a journey.",
+    },
+    bookOrder: {
+      kicker: "Book checkout", title: "Buy a book", description: "Select an edition and enter your delivery details. We’ll prepare a WhatsApp order message for Finopia.", editionLabel: "Book edition", marathiOption: "पैशाचे शहाणपण — Marathi", englishOption: "Money Wisdom — English", fullName: "Full name", email: "Email", mobile: "Mobile", pin: "PIN code", address: "Delivery address", city: "City", state: "State", assurance: "Your details will be shared with Finopia through WhatsApp.", submit: "Buy through WhatsApp", successKicker: "WhatsApp order ready", successTitle: "Your WhatsApp chat is ready.", successDescription: "Your order details are prefilled in a WhatsApp chat so you can continue with Finopia.", tryAgain: "Try again",
+      errors: { name: "Enter your full name.", email: "Enter a valid email address.", phone: "Enter a valid 10-digit Indian mobile number.", address: "Enter a complete delivery address.", city: "Enter the delivery city.", state: "Enter the delivery state.", postalCode: "Enter a valid 6-digit PIN code." },
+    },
     eyebrow: "Financial literacy • Distribution • Protection",
     heroTitleA: "Build a wiser",
     heroTitleB: "financial life.",
@@ -38,6 +48,16 @@ export const translations = {
   },
   mr: {
     language: "English",
+    booksPage: {
+      eyebrow: "योगेश कदम यांची पुस्तके", heading: "आर्थिक शहाणपण,", headingAccent: "आयुष्यभरासाठी.", intro: "पैसा समजून घेण्यासाठी, आर्थिक जाणीव वाढवण्यासाठी आणि अधिक सुरक्षित आर्थिक भविष्य घडवण्यासाठी व्यावहारिक दृष्टिकोन.",
+      booksLabel: "पुस्तकाच्या आवृत्त्या", original: "मूळ मराठी आवृत्ती", marathiAlt: "योगेश कदम यांच्या पैशाचे शहाणपण पुस्तकाचे मुखपृष्ठ", marathiDescription: "पैशांच्या मूलभूत गोष्टी समजून घेणे, आर्थिक शिस्त वाढवणे, संरक्षणाची भूमिका ओळखणे आणि कुटुंबातील पैशांबद्दल अधिक अर्थपूर्ण संवाद साधणे यासाठीचा व्यावहारिक पाया.", author: "योगेश कदम", buyAmazon: "Amazon वर खरेदी करा",
+      englishEdition: "इंग्रजी आवृत्ती", englishTitle: "Money Wisdom", englishAlt: "Money Wisdom पुस्तकाचे मुखपृष्ठ", englishDescription: "Paishache Shahanpan चे इंग्रजी भाषांतर. आर्थिक साक्षरता, बचत, विमा, कर्ज, गुंतवणूक, आर्थिक ताण आणि नियोजन यांबाबत व्यावहारिक मार्गदर्शन.",
+      whatsappSection: "व्हॉट्सॲपवर पुस्तकाची ऑर्डर", whatsappSummary: "व्हॉट्सॲपवर पुस्तकाची ऑर्डर द्या", closing: "आर्थिक साक्षरतेपासून आर्थिक स्वावलंबनापर्यंतचा प्रवास.",
+    },
+    bookOrder: {
+      kicker: "पुस्तकाची ऑर्डर", title: "पुस्तक खरेदी करा", description: "पुस्तकाची आवृत्ती निवडा आणि वितरणाचा तपशील भरा. Finopia साठी व्हॉट्सॲप ऑर्डर संदेश तयार होईल.", editionLabel: "पुस्तकाची आवृत्ती", marathiOption: "पैशाचे शहाणपण — मराठी", englishOption: "Money Wisdom — इंग्रजी", fullName: "पूर्ण नाव", email: "ईमेल", mobile: "मोबाईल", pin: "पिन कोड", address: "वितरणाचा पत्ता", city: "शहर", state: "राज्य", assurance: "तुमचा तपशील Finopia सोबत व्हॉट्सॲपवर शेअर केला जाईल.", submit: "व्हॉट्सॲपवरून खरेदी करा", successKicker: "व्हॉट्सॲप ऑर्डर तयार", successTitle: "तुमचा व्हॉट्सॲप संवाद तयार आहे.", successDescription: "तुमच्या ऑर्डरचा तपशील व्हॉट्सॲप संदेशात भरलेला आहे. Finopia सोबत पुढे सुरू ठेवा.", tryAgain: "पुन्हा प्रयत्न करा",
+      errors: { name: "तुमचे पूर्ण नाव लिहा.", email: "योग्य ईमेल पत्ता लिहा.", phone: "योग्य १० अंकी भारतीय मोबाईल क्रमांक लिहा.", address: "पूर्ण वितरणाचा पत्ता लिहा.", city: "वितरणाचे शहर लिहा.", state: "वितरणाचे राज्य लिहा.", postalCode: "योग्य ६ अंकी पिन कोड लिहा." },
+    },
     eyebrow: "आर्थिक साक्षरता • वितरण • संरक्षण",
     heroTitleA: "सुजाण आर्थिक",
     heroTitleB: "जीवन घडवा.",

@@ -29,7 +29,7 @@ export const navItems = [
   ["About", "आमच्याविषयी", "/about"],
   ["Services", "सेवा", "/services"],
   ["Financial Literacy", "आर्थिक साक्षरता", "/financial-literacy"],
-  ["Book", "पुस्तक", "/book"],
+  ["Books", "पुस्तके", "/book"],
   ["Insights", "लेख", "/blogs"],
   ["Gallery", "छायाचित्रे", "/gallery"],
   ["Contact", "संपर्क", "/contact"],

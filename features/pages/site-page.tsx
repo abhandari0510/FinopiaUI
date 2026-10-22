@@ -9,13 +9,12 @@ import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { BookCheckout } from "@/features/checkout/book-checkout";
 import { ContactForm } from "@/features/contact/contact-form";
 import { FeedbackForm } from "@/features/contact/feedback-form";
 import { articles, services, site } from "@/content/site";
 import { pageCopy } from "@/i18n/pages";
 
-export type SitePageName = "about" | "founder" | "services" | "literacy" | "book" | "blogs" | "gallery" | "testimonials" | "contact" | "feedback" | "privacy" | "terms" | "disclosures";
+export type SitePageName = "about" | "founder" | "services" | "literacy" | "blogs" | "gallery" | "testimonials" | "contact" | "feedback" | "privacy" | "terms" | "disclosures";
 const serviceIcons = [ChartNoAxesCombined, ShieldCheck, HeartPulse, BookOpen, UsersRound, Landmark];
 const valueIcons = [Lightbulb, Scale, HeartHandshake, Eye];
 
@@ -78,11 +77,6 @@ export function SitePage({ page }: { page: SitePageName }) {
   if (page === "literacy") {
     const c = copy.literacy;
     return <main className={mainClass}><Hero copy={c.hero} /><section className="section"><div className="container learning-grid"><Reveal><span className="kicker">{c.kicker}</span><h2>{c.title}</h2><p className="large-copy">{c.lead}</p></Reveal><Reveal className="learning-steps">{c.steps.map((step, i) => <div key={step}><span>0{i + 1}</span><strong>{step}</strong></div>)}</Reveal></div></section><section className="section faq-section"><div className="container faq-grid"><Reveal><span className="kicker">{c.faqKicker}</span><h2>{c.faqTitle}</h2></Reveal><Reveal><Accordion type="single" collapsible>{c.faqs.map(([question, answer], i) => <AccordionItem value={`item-${i}`} key={question}><AccordionTrigger data-faro-user-action-name={`literacy.faq.toggle.${i + 1}`}>{question}</AccordionTrigger><AccordionContent>{answer}</AccordionContent></AccordionItem>)}</Accordion></Reveal></div></section></main>;
-  }
-
-  if (page === "book") {
-    const c = copy.book;
-    return <main className={mainClass}><Hero copy={c.hero} /><section className="book-detail section"><div className="container book-grid"><Reveal className="book-stage"><div className="book-shadow" /><div className="book-object"><div className="book-spine">पैशाचे शहाणपण · योगेश कदम</div><div className="book-cover book-cover-real"><Image src="/media/paishache-shahanpan-book-cover.jpg" alt="पैशाचे शहाणपण book cover" fill sizes="(max-width: 780px) 210px, 290px" priority /></div></div></Reveal><Reveal className="book-copy"><span className="kicker light">{c.inside}</span><h2>{c.title}</h2><p>{c.body}</p><ul>{c.points.map(point => <li key={point}><Check />{point}</li>)}</ul><div className="checkout-actions"><Button asChild><a href="#buy" data-faro-user-action-name="book.hero.buy-anchor">Buy the book <ArrowRight /></a></Button><Button asChild><a href="/feedback" data-faro-user-action-name="book.feedback-link">Share feedback <ArrowRight /></a></Button></div></Reveal></div><Reveal className="container checkout-wrap"><BookCheckout /></Reveal></section></main>;
   }
 
   if (page === "blogs") {

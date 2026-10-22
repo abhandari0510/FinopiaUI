@@ -114,7 +114,7 @@ export function HomePage() {
             </div>
             <div className="book-note"><BookOpen size={18} /><span>{t.writtenMarathi}<br /><strong>{t.everyFamily}</strong></span></div>
           </Reveal>
-          <Reveal className="book-copy" delay={.12}><span className="kicker light">{t.bookKicker}</span><h2>{t.bookTitle}</h2><h3>{t.bookSub}</h3><p>{t.bookBody}</p><ul>{t.bookPoints.map(point => <li key={point}><Check />{point}</li>)}</ul><Button asChild><Link href="/book#buy" data-faro-user-action-name="home.book.buy">Buy the book<ArrowRight size={17} /></Link></Button></Reveal>
+          <Reveal className="book-copy" delay={.12}><span className="kicker light">{t.bookKicker}</span><h2>{t.bookTitle}</h2><h3>{t.bookSub}</h3><p>{t.bookBody}</p><ul>{t.bookPoints.map(point => <li key={point}><Check />{point}</li>)}</ul><Button asChild><Link href="/book#buy" data-faro-user-action-name="home.book.buy">Buy the book<ArrowRight size={17} /></Link></Button><p className="english-book-note">Also available in English: <em>Money Wisdom.</em> <Link href="/book#english-title">Explore the English edition</Link></p></Reveal>
         </div>
       </section>
 
