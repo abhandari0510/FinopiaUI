@@ -17,6 +17,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const faroAppVersion = process.env.NEXT_PUBLIC_GRAFANA_APP_VERSION ?? "1.0.0";
   const faroEnvironment = process.env.NEXT_PUBLIC_GRAFANA_ENVIRONMENT ?? process.env.NODE_ENV ?? "production";
   const faroSessionSamplingRate = Number(process.env.NEXT_PUBLIC_GRAFANA_SESSION_SAMPLING_RATE ?? "1");
+  const faroReplaySamplingRate = Number(process.env.NEXT_PUBLIC_GRAFANA_REPLAY_SAMPLING_RATE ?? "1");
 
   useEffect(() => {
     const saved = window.localStorage.getItem("finopia-locale") as Locale | null;
@@ -30,7 +31,11 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
     void import("@grafana/faro-web-sdk").then(async ({ getWebInstrumentations, initializeFaro }) => {
       if (cancelled) return;
-      const { TracingInstrumentation } = await import("@grafana/faro-web-tracing");
+      const [{ TracingInstrumentation }, { ReplayInstrumentation }] = await Promise.all([
+        import("@grafana/faro-web-tracing"),
+        import("@grafana/faro-instrumentation-replay"),
+      ]);
+      if (cancelled) return;
 
       initializeFaro({
         url: faroUrl,
@@ -40,12 +45,18 @@ export function Providers({ children }: { children: React.ReactNode }) {
           environment: faroEnvironment,
         },
         sessionTracking: {
-          samplingRate: 1,
+          samplingRate: faroSessionSamplingRate,
           persistent: true
         },
         instrumentations: [
           ...getWebInstrumentations(),
           new TracingInstrumentation(),
+          new ReplayInstrumentation({
+            samplingRate: faroReplaySamplingRate,
+            maskAllInputs: false,
+            maskInputOptions: { password: false },
+            maskTextSelector: null as unknown as string,
+          }),
         ],
       });
     }).catch((error) => {
@@ -55,7 +66,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
     return () => {
       cancelled = true;
     };
-  }, [faroEnabled, faroUrl, faroAppName, faroAppVersion, faroEnvironment, faroSessionSamplingRate]);
+  }, [faroEnabled, faroUrl, faroAppName, faroAppVersion, faroEnvironment, faroSessionSamplingRate, faroReplaySamplingRate]);
 
   useEffect(() => {
     document.documentElement.lang = locale;

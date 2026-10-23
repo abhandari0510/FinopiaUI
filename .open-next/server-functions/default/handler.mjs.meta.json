@@ -3252,17 +3252,17 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/sitemap.xml/route_client-reference-manifest.js": {
-      "bytes": 10564,
+      "bytes": 10292,
       "imports": [],
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/robots.txt/route_client-reference-manifest.js": {
-      "bytes": 10562,
+      "bytes": 10290,
       "imports": [],
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-      "bytes": 136936,
+      "bytes": 132974,
       "imports": [
         {
           "path": "path",
@@ -3287,12 +3287,12 @@
         {
           "path": ".open-next/server-functions/default/.next/server/app/sitemap.xml/route_client-reference-manifest.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/sitemap.xml/route_client-reference-manifest.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/sitemap.xml/route_client-reference-manifest.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/robots.txt/route_client-reference-manifest.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/robots.txt/route_client-reference-manifest.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/robots.txt/route_client-reference-manifest.js"
         }
       ],
       "format": "cjs"
@@ -3571,7 +3571,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js": {
-      "bytes": 528458,
+      "bytes": 528434,
       "imports": [
         {
           "path": "url",
@@ -3696,17 +3696,17 @@
         {
           "path": ".open-next/server-functions/default/composable-cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
         },
         {
           "path": ".open-next/server-functions/default/composable-cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
         },
         {
           "path": ".open-next/server-functions/default/cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/cache.cjs"
         }
       ],
       "format": "cjs"
@@ -3885,13 +3885,28 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/chunks/348.js": {
-      "bytes": 56379,
+    ".open-next/server-functions/default/.next/server/chunks/272.js": {
+      "bytes": 56339,
       "imports": [],
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/37.js": {
       "bytes": 111943,
+      "imports": [],
+      "format": "cjs"
+    },
+    ".open-next/server-functions/default/.next/server/chunks/445.js": {
+      "bytes": 113858,
+      "imports": [],
+      "format": "cjs"
+    },
+    ".open-next/server-functions/default/.next/server/chunks/45.js": {
+      "bytes": 25721,
+      "imports": [],
+      "format": "cjs"
+    },
+    ".open-next/server-functions/default/.next/server/chunks/467.js": {
+      "bytes": 98792,
       "imports": [],
       "format": "cjs"
     },
@@ -3911,23 +3926,13 @@
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/chunks/721.js": {
-      "bytes": 25731,
-      "imports": [],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/chunks/896.js": {
-      "bytes": 111873,
+    ".open-next/server-functions/default/.next/server/chunks/840.js": {
+      "bytes": 206792,
       "imports": [],
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/897.js": {
       "bytes": 155162,
-      "imports": [],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/chunks/932.js": {
-      "bytes": 95738,
       "imports": [],
       "format": "cjs"
     },
@@ -3937,7 +3942,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/chunks/975.js": {
-      "bytes": 520436,
+      "bytes": 520364,
       "imports": [
         {
           "path": "@emotion/is-prop-valid",
@@ -3948,17 +3953,32 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/webpack-runtime.js": {
-      "bytes": 2116,
+      "bytes": 2169,
       "imports": [
         {
-          "path": ".open-next/server-functions/default/.next/server/chunks/348.js",
+          "path": ".open-next/server-functions/default/.next/server/chunks/272.js",
           "kind": "require-call",
-          "original": "./chunks/348.js"
+          "original": "./chunks/272.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/chunks/37.js",
           "kind": "require-call",
           "original": "./chunks/37.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/chunks/445.js",
+          "kind": "require-call",
+          "original": "./chunks/445.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/chunks/45.js",
+          "kind": "require-call",
+          "original": "./chunks/45.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/chunks/467.js",
+          "kind": "require-call",
+          "original": "./chunks/467.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/chunks/611.js",
@@ -3971,24 +3991,14 @@
           "original": "./chunks/692.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/chunks/721.js",
+          "path": ".open-next/server-functions/default/.next/server/chunks/840.js",
           "kind": "require-call",
-          "original": "./chunks/721.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/chunks/896.js",
-          "kind": "require-call",
-          "original": "./chunks/896.js"
+          "original": "./chunks/840.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/chunks/897.js",
           "kind": "require-call",
           "original": "./chunks/897.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/chunks/932.js",
-          "kind": "require-call",
-          "original": "./chunks/932.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/chunks/972.js",
@@ -4004,7 +4014,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/financial-literacy/page.js": {
-      "bytes": 16176,
+      "bytes": 16151,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4090,7 +4100,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js": {
-      "bytes": 167740,
+      "bytes": 167716,
       "imports": [
         {
           "path": "url",
@@ -4180,17 +4190,17 @@
         {
           "path": ".open-next/server-functions/default/composable-cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
         },
         {
           "path": ".open-next/server-functions/default/composable-cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
         },
         {
           "path": ".open-next/server-functions/default/cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/cache.cjs"
         },
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/after-task-async-storage.external.js",
@@ -4211,7 +4221,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/sitemap.xml/route.js": {
-      "bytes": 11921,
+      "bytes": 11903,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4272,7 +4282,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/blogs/[slug]/page.js": {
-      "bytes": 24659,
+      "bytes": 24627,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4358,7 +4368,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/testimonials/page.js": {
-      "bytes": 15964,
+      "bytes": 15939,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4444,7 +4454,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/robots.txt/route.js": {
-      "bytes": 11306,
+      "bytes": 11296,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4505,7 +4515,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/disclosures/page.js": {
-      "bytes": 15962,
+      "bytes": 15937,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4591,7 +4601,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/_not-found/page.js": {
-      "bytes": 15403,
+      "bytes": 15397,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4677,7 +4687,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/icon.svg/route.js": {
-      "bytes": 586629,
+      "bytes": 586617,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4738,7 +4748,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/feedback/page.js": {
-      "bytes": 16060,
+      "bytes": 16039,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4824,93 +4834,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/services/page.js": {
-      "bytes": 16074,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
-          "kind": "require-call",
-          "original": "next/dist/shared/lib/router/utils/app-paths"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/after-task-async-storage.external.js",
-          "kind": "require-call",
-          "original": "next/dist/server/app-render/after-task-async-storage.external.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
-          "kind": "require-call",
-          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/require-in-the-middle/index.js",
-          "kind": "require-call",
-          "original": "require-in-the-middle"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/action-async-storage.external.js",
-          "kind": "require-call",
-          "original": "next/dist/server/app-render/action-async-storage.external.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/is-bot.js",
-          "kind": "require-call",
-          "original": "next/dist/shared/lib/router/utils/is-bot"
-        },
-        {
-          "path": "util",
-          "kind": "require-call",
-          "external": true
-        },
-        {
-          "path": "fs",
-          "kind": "require-call",
-          "external": true
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/work-async-storage.external.js",
-          "kind": "require-call",
-          "original": "next/dist/server/app-render/work-async-storage.external.js"
-        },
-        {
-          "path": "path",
-          "kind": "require-call",
-          "external": true
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/dynamic-access-async-storage.external.js",
-          "kind": "require-call",
-          "original": "next/dist/server/app-render/dynamic-access-async-storage.external.js"
-        },
-        {
-          "path": "crypto",
-          "kind": "require-call",
-          "external": true
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/import-in-the-middle/index.js",
-          "kind": "require-call",
-          "original": "import-in-the-middle"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/work-unit-async-storage.external.js",
-          "kind": "require-call",
-          "original": "next/dist/server/app-render/work-unit-async-storage.external.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/no-fallback-error.external.js",
-          "kind": "require-call",
-          "original": "next/dist/shared/lib/no-fallback-error.external"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
-          "kind": "require-call",
-          "original": "../../webpack-runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/contact/page.js": {
-      "bytes": 16091,
+      "bytes": 16049,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -4996,7 +4920,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/founder/page.js": {
-      "bytes": 15938,
+      "bytes": 15913,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -5082,7 +5006,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/gallery/page.js": {
-      "bytes": 15928,
+      "bytes": 15903,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -5168,7 +5092,93 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/privacy/page.js": {
-      "bytes": 15922,
+      "bytes": 15897,
+      "imports": [
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
+          "kind": "require-call",
+          "original": "next/dist/shared/lib/router/utils/app-paths"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/after-task-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/after-task-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/require-in-the-middle/index.js",
+          "kind": "require-call",
+          "original": "require-in-the-middle"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/action-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/action-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/is-bot.js",
+          "kind": "require-call",
+          "original": "next/dist/shared/lib/router/utils/is-bot"
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/work-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/work-async-storage.external.js"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/dynamic-access-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/dynamic-access-async-storage.external.js"
+        },
+        {
+          "path": "crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/import-in-the-middle/index.js",
+          "kind": "require-call",
+          "original": "import-in-the-middle"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/server/app-render/work-unit-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/server/app-render/work-unit-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/no-fallback-error.external.js",
+          "kind": "require-call",
+          "original": "next/dist/shared/lib/no-fallback-error.external"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
+          "kind": "require-call",
+          "original": "../../webpack-runtime.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    ".open-next/server-functions/default/.next/server/app/contact/page.js": {
+      "bytes": 16066,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -5380,7 +5390,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/pages.runtime.prod.js": {
-      "bytes": 135607,
+      "bytes": 135583,
       "imports": [
         {
           "path": "url",
@@ -5485,17 +5495,17 @@
         {
           "path": ".open-next/server-functions/default/composable-cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
         },
         {
           "path": ".open-next/server-functions/default/composable-cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
         },
         {
           "path": ".open-next/server-functions/default/cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/cache.cjs"
         },
         {
           "path": ".open-next/server-functions/default/node_modules/react/jsx-runtime.js",
@@ -5551,8 +5561,8 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/about/page.js": {
-      "bytes": 16097,
+    ".open-next/server-functions/default/.next/server/app/terms/page.js": {
+      "bytes": 15866,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -5638,7 +5648,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/blogs/page.js": {
-      "bytes": 16058,
+      "bytes": 16033,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -5723,8 +5733,8 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/terms/page.js": {
-      "bytes": 15891,
+    ".open-next/server-functions/default/.next/server/app/about/page.js": {
+      "bytes": 16070,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -5810,7 +5820,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/book/page.js": {
-      "bytes": 26512,
+      "bytes": 26484,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -5963,7 +5973,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/page.js": {
-      "bytes": 42654,
+      "bytes": 42624,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -6049,7 +6059,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/server/require.js": {
-      "bytes": 40644,
+      "bytes": 40468,
       "imports": [
         {
           "path": "path",
@@ -6099,112 +6109,112 @@
         {
           "path": ".open-next/server-functions/default/.next/server/app/financial-literacy/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/financial-literacy/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/financial-literacy/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/sitemap.xml/route.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/sitemap.xml/route.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/sitemap.xml/route.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/blogs/[slug]/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/blogs/[slug]/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/blogs/[slug]/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/testimonials/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/testimonials/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/testimonials/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/robots.txt/route.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/robots.txt/route.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/robots.txt/route.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/disclosures/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/disclosures/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/disclosures/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/_not-found/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/_not-found/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/_not-found/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/icon.svg/route.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/icon.svg/route.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/icon.svg/route.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/feedback/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/feedback/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/feedback/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/services/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/services/page.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/contact/page.js",
-          "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/contact/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/services/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/founder/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/founder/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/founder/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/gallery/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/gallery/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/gallery/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/privacy/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/privacy/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/privacy/page.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/contact/page.js",
+          "kind": "require-call",
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/contact/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/pages/_document.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_document.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/about/page.js",
-          "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/about/page.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/blogs/page.js",
-          "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/blogs/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_document.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/terms/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/terms/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/terms/page.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/blogs/page.js",
+          "kind": "require-call",
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/blogs/page.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/about/page.js",
+          "kind": "require-call",
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/about/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/book/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/book/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/book/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/pages/_error.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_error.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_error.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/pages/_app.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_app.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_app.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/page.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/app/page.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/app/page.js"
         }
       ],
       "format": "cjs"
@@ -6716,22 +6726,22 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/server/lib/module-loader/node-module-loader.js": {
-      "bytes": 914,
+      "bytes": 890,
       "imports": [
         {
           "path": ".open-next/server-functions/default/.next/server/pages/_document.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_document.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_document.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/pages/_error.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_error.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_error.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/pages/_app.js",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_app.js"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/.next/server/pages/_app.js"
         }
       ],
       "format": "cjs"
@@ -6810,7 +6820,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/server/next-server.js": {
-      "bytes": 52564,
+      "bytes": 52540,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/server/node-environment.js",
@@ -7115,17 +7125,17 @@
         {
           "path": ".open-next/server-functions/default/composable-cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
         },
         {
           "path": ".open-next/server-functions/default/composable-cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/composable-cache.cjs"
         },
         {
           "path": ".open-next/server-functions/default/cache.cjs",
           "kind": "require-call",
-          "original": "/home/akash-bhandari/app/FinOpia/FinopiaUI/.open-next/server-functions/default/cache.cjs"
+          "original": "/home/akash-bhandari/app/FinopiaUI/.open-next/server-functions/default/cache.cjs"
         },
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/experimental/testmode/server.js",
@@ -7141,7 +7151,7 @@
       "format": "esm"
     },
     ".open-next/server-functions/default/index.mjs": {
-      "bytes": 92020,
+      "bytes": 92004,
       "imports": [
         {
           "path": "node:module",
@@ -8646,13 +8656,13 @@
           "bytesInOutput": 586
         },
         ".open-next/server-functions/default/.next/server/app/sitemap.xml/route_client-reference-manifest.js": {
-          "bytesInOutput": 9866
+          "bytesInOutput": 9594
         },
         ".open-next/server-functions/default/.next/server/app/robots.txt/route_client-reference-manifest.js": {
-          "bytesInOutput": 9864
+          "bytesInOutput": 9592
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-          "bytesInOutput": 116517
+          "bytesInOutput": 112515
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/app-render/action-async-storage-instance.js": {
           "bytesInOutput": 501
@@ -8679,7 +8689,7 @@
           "bytesInOutput": 319
         },
         ".open-next/server-functions/default/node_modules/next/dist/compiled/jsonwebtoken/index.js": {
-          "bytesInOutput": 125654
+          "bytesInOutput": 125656
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/app-render/cache-signal.js": {
           "bytesInOutput": 2312
@@ -8744,11 +8754,20 @@
         ".open-next/server-functions/default/node_modules/import-in-the-middle/index.js": {
           "bytesInOutput": 3305
         },
-        ".open-next/server-functions/default/.next/server/chunks/348.js": {
-          "bytesInOutput": 81405
+        ".open-next/server-functions/default/.next/server/chunks/272.js": {
+          "bytesInOutput": 81365
         },
         ".open-next/server-functions/default/.next/server/chunks/37.js": {
           "bytesInOutput": 119658
+        },
+        ".open-next/server-functions/default/.next/server/chunks/445.js": {
+          "bytesInOutput": 121855
+        },
+        ".open-next/server-functions/default/.next/server/chunks/45.js": {
+          "bytesInOutput": 29198
+        },
+        ".open-next/server-functions/default/.next/server/chunks/467.js": {
+          "bytesInOutput": 103955
         },
         ".open-next/server-functions/default/.next/server/chunks/611.js": {
           "bytesInOutput": 72179
@@ -8756,71 +8775,65 @@
         ".open-next/server-functions/default/.next/server/chunks/692.js": {
           "bytesInOutput": 31988
         },
-        ".open-next/server-functions/default/.next/server/chunks/721.js": {
-          "bytesInOutput": 29209
-        },
-        ".open-next/server-functions/default/.next/server/chunks/896.js": {
-          "bytesInOutput": 119792
+        ".open-next/server-functions/default/.next/server/chunks/840.js": {
+          "bytesInOutput": 228401
         },
         ".open-next/server-functions/default/.next/server/chunks/897.js": {
           "bytesInOutput": 160919
         },
-        ".open-next/server-functions/default/.next/server/chunks/932.js": {
-          "bytesInOutput": 100571
-        },
         ".open-next/server-functions/default/.next/server/chunks/972.js": {
-          "bytesInOutput": 54242
+          "bytesInOutput": 54243
         },
         ".open-next/server-functions/default/.next/server/chunks/975.js": {
-          "bytesInOutput": 548401
+          "bytesInOutput": 548329
         },
         ".open-next/server-functions/default/.next/server/webpack-runtime.js": {
-          "bytesInOutput": 2035
+          "bytesInOutput": 2067
         },
         ".open-next/server-functions/default/.next/server/app/financial-literacy/page.js": {
-          "bytesInOutput": 16367
+          "bytesInOutput": 16342
         },
         ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js": {
           "bytesInOutput": 177960
         },
         ".open-next/server-functions/default/.next/server/app/sitemap.xml/route.js": {
-          "bytesInOutput": 12219
+          "bytesInOutput": 12201
         },
         ".open-next/server-functions/default/.next/server/app/blogs/[slug]/page.js": {
-          "bytesInOutput": 25142
+          "bytesInOutput": 25110
         },
         ".open-next/server-functions/default/.next/server/app/testimonials/page.js": {
-          "bytesInOutput": 16132
+          "bytesInOutput": 16107
         },
         ".open-next/server-functions/default/.next/server/app/robots.txt/route.js": {
-          "bytesInOutput": 11559
+          "bytesInOutput": 11549
         },
         ".open-next/server-functions/default/.next/server/app/disclosures/page.js": {
-          "bytesInOutput": 16135
+          "bytesInOutput": 16110
         },
         ".open-next/server-functions/default/.next/server/app/_not-found/page.js": {
-          "bytesInOutput": 15530
+          "bytesInOutput": 15524
         },
         ".open-next/server-functions/default/.next/server/app/icon.svg/route.js": {
-          "bytesInOutput": 586704
+          "bytesInOutput": 586692
         },
         ".open-next/server-functions/default/.next/server/app/feedback/page.js": {
-          "bytesInOutput": 16224
+          "bytesInOutput": 16203
         },
         ".open-next/server-functions/default/.next/server/app/services/page.js": {
-          "bytesInOutput": 16226
-        },
-        ".open-next/server-functions/default/.next/server/app/contact/page.js": {
-          "bytesInOutput": 16248
+          "bytesInOutput": 16201
         },
         ".open-next/server-functions/default/.next/server/app/founder/page.js": {
-          "bytesInOutput": 16101
+          "bytesInOutput": 16076
         },
         ".open-next/server-functions/default/.next/server/app/gallery/page.js": {
-          "bytesInOutput": 16098
+          "bytesInOutput": 16072
         },
         ".open-next/server-functions/default/.next/server/app/privacy/page.js": {
-          "bytesInOutput": 16086
+          "bytesInOutput": 16061
+        },
+        ".open-next/server-functions/default/.next/server/app/contact/page.js": {
+          "bytesInOutput": 16224
         },
         ".open-next/server-functions/default/node_modules/react/cjs/react-jsx-runtime.production.js": {
           "bytesInOutput": 740
@@ -8864,17 +8877,17 @@
         ".open-next/server-functions/default/.next/server/pages/_document.js": {
           "bytesInOutput": 492
         },
-        ".open-next/server-functions/default/.next/server/app/about/page.js": {
-          "bytesInOutput": 16268
+        ".open-next/server-functions/default/.next/server/app/terms/page.js": {
+          "bytesInOutput": 16013
         },
         ".open-next/server-functions/default/.next/server/app/blogs/page.js": {
-          "bytesInOutput": 16205
+          "bytesInOutput": 16180
         },
-        ".open-next/server-functions/default/.next/server/app/terms/page.js": {
-          "bytesInOutput": 16038
+        ".open-next/server-functions/default/.next/server/app/about/page.js": {
+          "bytesInOutput": 16241
         },
         ".open-next/server-functions/default/.next/server/app/book/page.js": {
-          "bytesInOutput": 27293
+          "bytesInOutput": 27265
         },
         ".open-next/server-functions/default/.next/server/pages/_error.js": {
           "bytesInOutput": 86396
@@ -8883,7 +8896,7 @@
           "bytesInOutput": 3581
         },
         ".open-next/server-functions/default/.next/server/app/page.js": {
-          "bytesInOutput": 44026
+          "bytesInOutput": 43996
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/require.js": {
           "bytesInOutput": 34847
@@ -8997,10 +9010,10 @@
           "bytesInOutput": 5074
         },
         ".open-next/server-functions/default/index.mjs": {
-          "bytesInOutput": 64830
+          "bytesInOutput": 64814
         }
       },
-      "bytes": 4461552
+      "bytes": 4690316
     }
   }
 }
